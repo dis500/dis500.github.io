@@ -1,0 +1,54 @@
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.timer-counting {
+  font-size: 30px;
+}
+
+.timer-wrapper {
+  display: flex;
+  vertical-align: middle;
+  margin: 0 20px;
+}
+
+.timer-item {
+  position: relative;
+  min-width: 80px;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  border: 2px solid #000000;
+  border-radius: 23px;
+}
+
+.timer-item::after {
+  content: ":";
+  position: absolute;
+  right: -21px;
+  top: 0;
+  display: block;
+  font-size: 56px;
+}
+
+.timer-item:last-child::after {
+  display: none;
+}
+
+.timer-item span {
+  display: block;
+  font-size: 20px;
+}
+
+.timer-numbers {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
